@@ -1,0 +1,39 @@
+.root {
+	-table-width: 1000px;
+	-main-color: #57A5A5;
+}
+.cell {
+	-fx-background-color: derive(-main-color, 90%);
+}
+.even {
+	-fx-background-color: derive(-main-color, 60%);
+}
+#theTable {
+	-fx-pref-width: -table-width;
+	-fx-spacing: 10px;
+}
+.header {
+	-fx-background-color: derive(-main-color, -40%);
+	-fx-padding: 10px;
+	-fx-pref-height: 20px;
+}
+#preScroll {
+	-fx-pref-width: -table-width;
+	-fx-max-width: -table-width;
+	-fx-min-width: -table-width;
+	/*didnt know this was all I had to do to make the ScrollPane transparent*/
+	-fx-base: rgba(255, 255, 255, 0);
+}
+.heightSpacing {
+	-fx-pref-height: 50px;
+}
+.cell {
+	-fx-padding: 10px;
+	-fx-pref-height: 20px;
+}
+#rootPane {
+	-fx-background-image: url("Caribbean-beach.jpg");
+	-fx-background-position: center;
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+}
